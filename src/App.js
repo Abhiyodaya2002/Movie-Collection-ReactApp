@@ -111,7 +111,7 @@ function App() {
   const [selectedMovie,setSelectedMovie]=useState();
    async function callApi(searchMovie)
 {
-  const res =await axios.get(`http://www.omdbapi.com/?s=${searchMovie}&apikey=f7b56733`);
+  const res =await axios.get(`https://www.omdbapi.com/?s=${searchMovie}&apikey=f7b56733`);
  // console.log(res.data.Search);
   setmovieList(res.data.Search);
 }
@@ -122,7 +122,7 @@ function  OnSearch(event)
   
   let timeout=setTimeout(()=>{
     callApi(event.target.value);
-  },850);
+  },500);
   setTimeoutID(timeout);
 }
 

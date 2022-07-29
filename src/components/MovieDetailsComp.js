@@ -66,7 +66,7 @@ export default function MovieDetailsComp(props) {
     
     const [movieInformation,setMovieInformation]=useState();
     useEffect(()=>{
-     axios.get(`http://www.omdbapi.com/?i=${props.selectedMovie}&apikey=f7b56733`).then((response)=>{
+     axios.get(`https://www.omdbapi.com/?i=${props.selectedMovie}&apikey=f7b56733`).then((response)=>{
        setMovieInformation(response.data);
      })
     },[props.selectedMovie]);
