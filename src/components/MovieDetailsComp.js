@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import styled from "styled-components"
-
 const Container=styled.div`
 display: flex;
 flex-direction:row;
@@ -25,8 +24,8 @@ margin: 20px;
 `
 const MovieName=styled.span`
 font-size:18px;
-font-weight: 600;
-color:black;
+font-weight: 700;
+color: white;
 margin:10px 0px;
 white-space:nowrap;
 text-overflow:ellipsis;
@@ -34,14 +33,14 @@ overflow :hidden;
 `
 const MovieInfo=styled.span`
 font-size:16px;
-font-weight: 500;
-color:black;
+font-weight: 550;
+color:white;
 margin:4px 0px;
 white-space:wrap;
 text-overflow:ellipsis;
 overflow :hidden;
 & span{
-    opacity:0.7;
+    opacity:0.8;
 
 }
 `
@@ -49,7 +48,7 @@ const Close=styled.span`
 margin:2px;
 font-size:20px;
 font-weight:600;
-color:black;
+color:white;
 padding :4px;
 background-color:lightgrey;
 cursor:pointer;
