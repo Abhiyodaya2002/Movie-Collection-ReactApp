@@ -1,6 +1,13 @@
 *{
   margin:0;
   padding:0;
+  color: white;
+}
+body{
+  background-image: url("image1.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .App {
   text-align: center;
