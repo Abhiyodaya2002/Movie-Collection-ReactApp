@@ -17,7 +17,7 @@ object-fit:cover;
 const MovieName=styled.span`
 font-size:18px;
 font-weight: 600;
-color:black;
+color: white;
 margin:10px 0px;
 /* Suppose if the name in span is very big then  it will come in next line too.....*/
 white-space:nowrap; /*to avoid text to come in next line */
@@ -32,7 +32,7 @@ justify-content:space-between;
 const MovieInfo=styled.span`
 font-size:16px;
 font-weight:500;
-color:balck;
+color:white;
 `
 
 export default function MovieComponent(props) {
