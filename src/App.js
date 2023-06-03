@@ -10,7 +10,6 @@ import axios from "axios";
 const Container=styled.div`
 display: flex;
 flex-direction:column;
-
 `;
 const Header=styled.div`
 @media screen and (max-width: 500px)
@@ -100,7 +99,14 @@ height:120px;
   margin:150px;
   opacity:0.7;
 `
-
+const styledDivInfo= styled.div`
+width:70%;
+margin:150px;
+opacity:0.7;
+background-color:grey;
+border-radius: 4px;
+color:red;
+`
 
 
 function App() {
@@ -119,14 +125,16 @@ function  OnSearch(event)
 {
   clearTimeout(timeoutID);
   setSearchMovie(event.target.value);
-  
   let timeout=setTimeout(()=>{
     callApi(event.target.value);
   },500);
+  
+  document.getElementById("loading").innerHTML="";
   setTimeoutID(timeout);
 }
 
   return (
+  
     <Container>
        <Header>
        <Image src="movie-icon.svg">
@@ -138,22 +146,22 @@ function  OnSearch(event)
   <Searchinput placeholder="Enter the movie name" value={searchMovie} onChange={OnSearch}></Searchinput>
 </SearchBox >
        </Header>
+
 {
  selectedMovie && <MovieDetailsComp selectedMovie={selectedMovie} setSelectedMovie={setSelectedMovie}></MovieDetailsComp>
 }
 
 <MovieListContainer>
-
-
 {movieList?movieList.map((element) => (
         <MovieComponent title={element.Title} year={element.Year} type={element.Type} image={element.Poster} setMovie={setSelectedMovie} id={element.imdbID}></MovieComponent>
       )):
-      <DefaultBackgroundImg src="movie-icon.svg"></DefaultBackgroundImg>
+    <DefaultBackgroundImg src="movie-icon.svg"></DefaultBackgroundImg>
       
     }
 
       </MovieListContainer>
     </Container>
+
   );
 }
 
