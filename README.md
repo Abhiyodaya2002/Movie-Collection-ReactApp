@@ -1,10 +1,10 @@
-# Food Ordering Web App using MERN Stack
+# URL Shrinker using Node.js
 
 The Movie Collection React App is a simple web application built in React. Users may easily search for movies using keywords or titles with this app. The application delivers a huge library of movies as well as detailed information about each movie, such as its title, release date, overview, and poster image, by using the power of The Movie Database (TMDb) API.
 
 ## Live-Demo
 
-<a href="https://www.youtube.com/watch?v=XVDuomkMOgM">https://www.youtube.com/watch?v=XVDuomkMOgM</a>
+<a href="https://youtu.be/4ojbMuc39rQ">https://youtu.be/4ojbMuc39rQ</a>
 
 
 ## Tech-Stack
